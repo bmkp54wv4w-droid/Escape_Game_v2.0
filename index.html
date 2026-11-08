@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#333333">
+<title>Mobility Decision Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><span class="logo">Mobility Decision</span><span class="chips"><button id="akteBtn" class="chip">AKTE</button><button id="rst" class="chip">RAUM NEU</button><button id="hilfe" class="chip">HILFE 3/3</button></span></header>
+<div id="layout">
+<aside id="side"><button id="sideClose" class="b ghost">Schließen</button><nav class="tabs"><button data-t="akte" class="on">Akte</button><button data-t="weg">Praxisweg</button></nav><div id="tab-akte"></div><div id="tab-weg" hidden></div></aside>
+<div id="col">
+<div id="prog" aria-label="Fortschritt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div>
+<div id="hint" role="status" hidden></div>
+<div id="reset" hidden></div>
+<main id="main" class="enter"><noscript>Bitte JavaScript aktivieren.</noscript></main>
+<section id="summary" hidden></section>
+</div>
+</div>
+<footer><button id="neu" class="lk2">Neues Spiel / Daten löschen</button><p>Prototyp · alle Werte sind Spielwerte · Spielstand nur lokal im Browser</p></footer>
+<script src="data.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
